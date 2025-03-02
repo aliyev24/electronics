@@ -24,9 +24,7 @@ ENV/
 .vscode/
 
 
-# Migrations
-*/migrations/*
-*/migrations/.empty
+
 
 
 # Local development
