@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block content%}
+{% load static %}
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="../static/img/karusel_1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Computer Repair Services</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Phone Repair</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Our skilled technicians are dedicated to providing fast, reliable repairs with a focus on quality and customer satisfaction.</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+{#                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Free Quote</a>#}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="../static/img/karusel_2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Phone Repair Services</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Computer Repair Services</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">
+Welcome to Osman Electronics - Your Trusted Phone & Laptop Repair Experts!
+
+At Osman Electronics, we understand how essential your devices are to your daily life. Whether it’s your smartphone, laptop, or tablet, we’re here to ensure they stay in top shape.</p>
+                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Read More</a>
+{#                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Free Quote</a>#}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                {% for service in services %}
+                    <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="overflow-hidden">
+{#                        <img  class="img-fluid w-100 h-100" src="{{service.photo.url}}" alt="">#}
+                        <img class="img-fluid width: 400px; height: 400px " src="{{service.photo.url}}" >
+                        
+
+
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
+                        <h5 class="text-truncate me-3 mb-0">{{service.title}}</h5>
+                        <a class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0" href=""><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                {% endfor %}
+
+    <!-- Service End -->
+
+
+    {% endblock %}
+
+  

@@ -1,0 +1,34 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+/static/
+media/
+
+# Virtualenv
+venv/
+env/
+ENV/
+*.env
+
+# IDEs and editors
+.idea/
+.vscode/
+
+
+# Migrations
+*/migrations/*
+*/migrations/.empty
+
+
+# Local development
+.local/
+*.sqlite3
